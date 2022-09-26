@@ -1,0 +1,330 @@
+:root {
+    --primary-gradient: linear-gradient(270deg, #002D57, #141414);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: oswald, Sans-serif;
+}
+
+body {
+    display: block;
+    /* height: 10000px; */
+    text-align: center;
+    
+    background-size: cover;
+    background-image: url('/assets/4907157.jpg');
+    background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+    background-color: #002D57;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #03d59f;
+}
+
+article {
+    padding: 40px;
+    text-align: center;
+}
+
+.grad, .bg {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.grad {
+    background: var(--primary-gradient);
+}
+
+.title {
+    background: linear-gradient(270deg, #2596be, #141414);
+    background-size: 400% 400%;
+
+    animation: gradient 10s ease infinite;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+h1 {
+    padding: 20px;
+    font-size: 200%;
+    color: #03d59f;
+    padding-left: 0px;
+    /* text-shadow: 4px 4px white; */
+}
+
+h3 {
+    padding-bottom: 20px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 10px;
+}
+
+.info li {
+    font-weight: 550;
+}
+
+hr {
+    border: 1px solid white;
+}
+
+.info li:before {
+    content: "✓";
+    width: 1.3em;
+    margin-left: -1.3em;
+    display: inline-block;
+}
+
+a {
+    color: white;
+    margin-top: 20px;
+    position: inherit;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+    background-image: var(--primary-gradient);
+}
+
+h2 {
+    font-size: medium
+}
+
+.gambar {
+    width: 100%;
+    border-radius: 0px 20px 0px 20px;
+    filter: drop-shadow(10px 10px 0px white);
+}
+
+.grad {
+    color: white;
+    display: block;
+    padding-top: 30px;
+}
+
+ul {
+    text-align: left;
+}
+
+.right {
+    margin: 0;
+}
+
+.right {
+    margin-top: 40px;
+}
+
+
+
+.client {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.bg-3 {
+    text-align: center;
+}
+
+.whatsapp-modal {
+    padding: 30px;
+    background: #002D57;
+    text-align: left;
+    color: white;
+    display: none;
+    position: fixed;
+    z-index: 10020 !important;
+    top: 0;
+    width: 90%;
+    margin: 2.7% 5% 0 5%;
+    border-radius: 14px;
+}
+
+.whatsapp-modal > h2 {
+    padding-bottom: 0px;
+}
+
+.wmodalclose {
+    font-size: 28px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.wmodalclose:hover {
+    cursor: pointer;
+}
+
+label, span {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.whatsapp-modal > h1 {
+    
+    background: linear-gradient(270deg, #2596be, white);
+    background-size: 400% 400%;
+
+    animation: gradient 10s ease infinite;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    
+    -webkit-text-fill-color: transparent;
+}
+
+input {
+    border-radius: 10px;
+    border: none;
+    color: gray;
+    padding: 10px;
+    width: 100%;
+}
+
+.dropdown-wrapper > ul {
+    color: gray;
+    background: white;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    font-size: small;;
+}
+
+.dropdown-wrapper li {
+    display: none;
+}
+
+.placeholder, .default, .show {
+    display: block !important;
+}
+
+.show {
+    padding: 10px;
+    width: 100%;
+    transition: background .3s ease;
+    border-radius: 10px;
+}
+
+.show:hover {
+    color: white;
+    background:#2596be;
+    border-radius: 10px;
+}
+
+@media (min-width: 290px) and (max-width: 670px) {
+
+    .whatsapp-modal {
+        padding: 30px;
+        padding-top: 10px;
+        background: #002D57;
+        text-align: left;
+        color: white;
+        display: none;
+        position: fixed;
+        z-index: 10020 !important;
+        top: 0;
+        width: 90%;
+        /* margin: 0% 5% 0 5%; */
+        margin: 5%;
+        border-radius: 14px;
+        height: 95%;
+    }
+
+    .whatsapp-modal > h1 {
+        font-size: 181%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1920px) {
+    .client {
+        border-radius: 8px;
+    }
+
+    article {
+        text-align: left;
+    }
+
+    .gambar {
+        max-width: 50%;
+        float: right;
+        margin: 50px;
+        margin-top: 0px;
+        position: absolute;
+        top: 15%;
+        right: 0%;
+    }
+
+    h1 {
+        font-size: 300%;
+        /* margin: 0px 100px 0px 100px; */
+    }
+
+    h2 {
+        margin-top: 20px;
+        /* margin-left: 100px; */
+    }
+
+    .info {
+        max-width: 40%;
+        padding: 0px;
+    }
+
+    .grad {
+        display: flex;
+    }
+
+    .right {
+        margin: 0px 0px 0px auto;
+    }
+
+    .grad>.info {
+        margin-top: 30px;
+    }
+}
+
+.dropdown > li {
+    margin: 0;
+}
+
+.dropdown {
+    margin: 0;
+}
+
+.tombol {
+    margin: 20px 0 0 0;
+    background: linear-gradient(270deg, #002D57, #141414);
+    padding: 20px 30px;
+    color: #fff;
+    font-weight: bold !important;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.tombol:hover {
+    cursor: pointer;
+}
