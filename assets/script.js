@@ -11,7 +11,3 @@ function tutupmenu() {
     var x = document.getElementById("wmodal");
     x.style.display = "none";
 }
-
-$(document).ready(function () {
-    $("select").select2({});
-})
